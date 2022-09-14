@@ -26,7 +26,7 @@ public class Pedido {
     private Cliente cliente;
     @Column(name = "data_pedido")
     private LocalDate dataPedido;
-    //10000.00 --> O scale faz menção aos últimos 2 zeros.
+    //10000.00 --> O scale faz menção aos últimos 2 zeros. O Precision ao número de casas decimais que o campo terá.
     @Column(name = "total", scale = 2, precision = 20)
     private BigDecimal total;
     @Enumerated(EnumType.STRING)
